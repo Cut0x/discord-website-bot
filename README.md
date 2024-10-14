@@ -33,4 +33,9 @@ define('DISCORD_API_URL', 'https://discord.com/api/v10/users/@me/guilds');
 // Other global configurations
 define('SITE_NAME', 'BOT_NAME');
 define('SITE_URL', 'WEBSITE_URL');
+
+define('DISCORD_CLIENT_ID', 'BOT_ID');  // Replace with your customer ID
+define('DISCORD_CLIENT_SECRET', 'SECRET_TOKEN_BOT');  // Replace with your secret shopper
+define('DISCORD_REDIRECT_URI', 'http://localhost/callback.php');  // Redirect URL
+define('DISCORD_API_URL_A', 'https://discord.com/api');
 ```
