@@ -1,7 +1,7 @@
 <?php
 include('./src/inc/stats-count.php');
 
-// Calculer le nombre total de serveurs et d'utilisateurs
+// Calculate total number of servers and users
 $total_servers = count($guilds);
 ?>
 
@@ -21,8 +21,8 @@ $total_servers = count($guilds);
         <div class="brand"><i class="fas fa-robot"></i> [BOT_NAME]</div>
         <div class="nav-links">
             <a href="./"><i class="fas fa-home"></i> Home</a>
-            <a href="#commands"><i class="fas fa-list"></i> Commandes</a>
-            <a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="commands.php"><i class="fas fa-list"></i> Commands</a>
+            <a href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
         </div>
 
         <div class="mobile-menu-icon" onclick="toggleMenu()">
@@ -31,14 +31,14 @@ $total_servers = count($guilds);
     </nav>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#home"><i class="fas fa-home"></i> Home</a>
-        <a href="#commands"><i class="fas fa-list"></i> Commandes</a>
-        <a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="./"><i class="fas fa-home"></i> Home</a>
+        <a href="commands.php"><i class="fas fa-list"></i> Commands</a>
+        <a href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
     </div>
 
     <div class="content">
-        <h1><i class="fas fa-magic"></i> Bienvenue sur [BOT_NAME]</h1>
-        <p><i class="fas fa-cogs"></i> Le bot qui sert à tout et à rien, constamment en amélioration.</p>
+        <h1><i class="fas fa-magic"></i> Welcome to [BOT_NAME]</h1>
+        <p><i class="fas fa-cogs"></i> The bot that is used for everything and nothing, constantly improving.</p>
     </div>
     
     <div class="bot-stats">
@@ -47,7 +47,7 @@ $total_servers = count($guilds);
         <div class="stat">
             <i class="fas fa-server"></i>
             <div class="stat-details">
-                <h3>Serveurs</h3>
+                <h3>Guilds</h3>
                 <p id="serverCount" data-count="<?php echo $total_servers; ?>">0</p>
             </div>
         </div>
@@ -55,7 +55,7 @@ $total_servers = count($guilds);
         <div class="stat">
             <i class="fas fa-terminal"></i>
             <div class="stat-details">
-                <h3>Commandes</h3>
+                <h3>Commands</h3>
                 <p id="commandCount" data-count="300">0</p>
             </div>
         </div>
@@ -68,7 +68,7 @@ $total_servers = count($guilds);
         <img src="src/images/features/feature_3.PNG" alt="Image flottante 3" class="float-image">
     </div>
 
-    <!-- Profil du créateur -->
+    <!-- Creator profile -->
     <section class="creator-profile">
         <div class="banner">
             <img src="src/images/me/your_banner.png" alt="Bannière du créateur">
@@ -92,38 +92,7 @@ $total_servers = count($guilds);
 
     <?php include('./src/inc/footer.php'); ?>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("mobileMenu");
-            if (menu) {
-                menu.classList.toggle("active");
-            } else {
-                console.error("L'élément mobileMenu n'a pas été trouvé");
-            }
-        }
-
-        // Fonction pour animer les compteurs
-        function animateCounter(element, start, end, duration) {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                element.textContent = Math.floor(progress * (end - start) + start);
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-        }
-            };
-            window.requestAnimationFrame(step);
-        }
-
-        // Lancer l'animation pour chaque statistique
-        document.addEventListener("DOMContentLoaded", function() {
-            const serverCount = document.getElementById("serverCount");
-            const commandCount = document.getElementById("commandCount");
-
-            animateCounter(serverCount, 0, parseInt(serverCount.getAttribute('data-count')), 2000);
-            animateCounter(commandCount, 0, parseInt(commandCount.getAttribute('data-count')), 2000);
-        });
-    </script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/countEffect.js"></script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+{
+    "commands": [
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        },
+        {
+            "name": "/commands",
+            "description": "title of the command.",
+            "icon": "fas fa-info-circle"
+        }
+    ]
+}

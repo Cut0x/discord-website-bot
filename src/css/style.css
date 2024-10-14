@@ -399,3 +399,69 @@ footer {
         font-size: 1.2em;
     }
 }
+/* Styles pour la section des commandes */
+.commands-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.commands-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.commands-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.commands-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.command {
+    background-color: #2a2a2a;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.command i {
+    font-size: 2em;
+    color: #d4b5ff;
+    margin-right: 10px;
+}
+
+.command-details h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.command-details p {
+    font-size: 1.1em;
+    color: #d4b5ff;
+}
+
+.command:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive design for commands */
+@media screen and (max-width: 768px) {
+    .commands-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .command {
+        width: 80%;
+    }
+}

@@ -2,4 +2,4 @@
 
 <link rel="shortcut icon" href="/src/images/bot/logo.png" type="image/x-icon">
 
-<meta name="description" content="[BOT] ! Le nouveau bot pour votre serveur !">
+<meta name="description" content="[BOT] ! The new bot for your server !">

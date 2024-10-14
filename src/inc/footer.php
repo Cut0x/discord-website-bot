@@ -5,10 +5,10 @@
             <a href="https://api.valloic.dev/redirect/?url=github?project=tbot" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://api.valloic.dev/redirect/?url=discord?project=tbot" target="_blank"><i class="fab fa-discord"></i></a>
         </div>
-        <p>&copy; 2024 T'Bot. Tous droits réservés.</p>
+        <p>&copy; 2024 [BOT_NAME]. All rights reserved.</p>
         <div class="footer-links">
-            <a href="#privacy">Politique de confidentialité</a>
-            <a href="#terms">Conditions d'utilisation</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Use</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
