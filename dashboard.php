@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['access_token'])) {
+    // Redirect to OAuth2 login page if not logged in
+    header('Location: login.php');
+    exit;
+}
+
 // Inclure la configuration
 require 'config.php';
 ?>
